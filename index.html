@@ -30,7 +30,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <head> 
 	<title>Hello World</title>  
-]	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="w3-colors-flat.css">
@@ -38,7 +38,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	<script>
         var feet_count = 0;// creating a variable and initializing it as 0
         var eczema_count = 0;// creating a variable and initializing it as 0
 
@@ -54,11 +53,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		function mytestresults(){
 			var total_questionss = feet_count + eczema_count; //variable of the total count is created by adding both the amount of allergy and cold count
 
-			var Percent_allergy = (feet_count / total_questionss * 100); //the equation for counting the allergy percentage which is (allergy/total) times 100 and rounds it to the second decimal place
-            var Percent_cold = (eczema_count / total_questionss * 100);  //the equation for counting the cold percentage which is (cold/total) times 100 and rounds it to the second decimal place
+			var Percent_Athelete_feet = (feet_count / total_questionss * 100); //the equation for counting the allergy percentage which is (allergy/total) times 100 and rounds it to the second decimal place
+            var Percent_eczema = (eczema_count / total_questionss * 100);  //the equation for counting the cold percentage which is (cold/total) times 100 and rounds it to the second decimal place
 
 			var resultText = document.getElementById("resultsinformation"); //creates a variable that can be used to change things inside later
-            resultText.innerHTML = "Allergy probability= " + Percent_allergy + "%<br> Cold probability = " + Percent_cold + "%";
+            resultText.innerHTML = "Allergy probability= " + Percent_Athelete_feet + "%<br> Cold probability = " + Percent_eczema + "%";
 		}
 
 </script>	
@@ -96,7 +95,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <div class="content w3-container">
-	<p>Are you feeling like you might have an athele's feet, but wonder if it is eczema Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have an athelete's feet, but wonder if it is eczema Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -146,7 +145,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div class="content w3-container">
-		<p>Do you have a burning feeling in addition to any itching?</p></p> <!-- question number 4-->
+		<p>Do you have a burning feeling in addition to any itching?</p> <!-- question number 4-->
 		<a href="#five"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
         <a href="#five"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
 	</div>
@@ -186,8 +185,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </footer>
 	</div>
 </body>
-</html>
+
 <!--After some errors, I ran it through ChatGPT, copilot, and gemini which gave me some suggestions that were useful to create the website.--> 
-	
-</body>
+
 </html>
