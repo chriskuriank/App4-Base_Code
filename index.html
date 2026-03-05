@@ -53,11 +53,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		function mytestresults(){
 			var total_questionss = feet_count + eczema_count; //variable of the total count is created by adding both the amount of allergy and cold count
 
-			var Percent_Athelete_feet = (feet_count / total_questionss * 100); //the equation for counting the allergy percentage which is (allergy/total) times 100 and rounds it to the second decimal place
+			var Percent_Athlete_feet = (feet_count / total_questionss * 100); //the equation for counting the allergy percentage which is (allergy/total) times 100 and rounds it to the second decimal place
             var Percent_eczema = (eczema_count / total_questionss * 100);  //the equation for counting the cold percentage which is (cold/total) times 100 and rounds it to the second decimal place
 
 			var resultText = document.getElementById("resultsinformation"); //creates a variable that can be used to change things inside later
-            resultText.innerHTML = "Allergy probability= " + Percent_Athelete_feet + "%<br> Cold probability = " + Percent_eczema + "%";
+            resultText.innerHTML = "Athlete's feet probability= " + Percent_Athlete_feet + "%<br> Cold probability = " + Percent_eczema + "%";
 		}
 
 </script>	
@@ -85,12 +85,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     z-index: 1;
 }
 	img, object{
-	max-height:90%
-	max-width:90%
+	max-height:90%;
+	max-width:90%;
 	height: auto; 
 	width: auto;
 	}
-	</style>
+	
 </style>
 
 <body>
@@ -98,20 +98,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
 	
 <div class="header w3-container w3-flat-carrot">
-	<h1>Athelete's feel or Eczema?</h1>
-	<img src="img_feetimage.jpg" alt="feet that has eczema">
+	<h1>Athlete's feet or Eczema?</h1>
+
 	
 </div>
 	
 <div class="content w3-container">
-	<p>Are you feeling like you might have an athelete's feet, but wonder if it is eczema Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have an athlete's feet, but wonder if it is eczema Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-		<img src="feetimage.jpg" alt="feet that has eczema">
+		<img src="feetimage.jpg" alt="feet that have eczema">
 	<img src="feetimage2.webp" alt="feet that has athelet's foot">
 </div> <!-- adding this because it seems to be missing????? -->
 	
@@ -169,7 +169,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div class="content w3-container">
-		<p>Is your feet's skin dry or moist between the toes?</p> <!-- question number 4-->
+		<p>Is the skin on your feet dry or moist between the toes?</p> <!-- question number 4-->
 		<a href="#six"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
         <a href="#six"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
 	</div> 
