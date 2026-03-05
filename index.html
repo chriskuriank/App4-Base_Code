@@ -84,6 +84,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     left: 0vw;
     z-index: 1;
 }
+	img, object{
+	max-height:90%
+	max-width:90%
+	height: auto; 
+	width: auto;
+	}
+	</style>
 </style>
 
 <body>
@@ -92,6 +99,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <div class="header w3-container w3-flat-carrot">
 	<h1>Athelete's feel or Eczema?</h1>
+	<img src="img_feetimage.jpg" alt="feet that has eczema">
+	
 </div>
 	
 <div class="content w3-container">
@@ -102,6 +111,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+		<img src="feetimage.jpg" alt="feet that has eczema">
+	<img src="feetimage2.webp" alt="feet that has athelet's foot">
 </div> <!-- adding this because it seems to be missing????? -->
 	
 <div class="page" id="one"> <!-- created a reusable class and id-->
@@ -126,7 +137,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a rash between your toes?</p> <!-- question number 2-->
 		<a href="#three"  onclick="eczemaAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
         <a href="#three"  onclick="feetAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
-			<img src="img_feetimage.jpg" alt="feet that has eczema">
+		
+		
 	</div>
 </div>	
 <div class="page" id="three">  <!-- created a reusable class and id-->
