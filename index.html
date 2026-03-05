@@ -38,26 +38,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-        var feet_count = 0;// creating a variable and initializing it as 0
+        var feet_count = 0;// creating a variable and initializing it as 0. I will be referring to athlete's feet as feet for this assignment.
         var eczema_count = 0;// creating a variable and initializing it as 0
 
 
-        function feetAdd(){  //creating the function for counting allergies everytime the person presses yes
-            feet_count = feet_count + 1; //the allergy count goes up by one everytime the press yes
+        function feetAdd(){  //creating the function for counting the signs of athlete's feet everytime the person presses yes for signs of athlete's feet
+            feet_count = feet_count + 1; //the athlete feet(feet) count goes up by one everytime the press yes
 
         }
 
-        function eczemaAdd(){ //creating the function for counting cold everytime the person presses yes
-            eczema_count = eczema_count + 1; //the cold count goes up by one everytime the press yes
+        function eczemaAdd(){ //creating the function for counting eczema everytime the person presses yes
+            eczema_count = eczema_count + 1; //the eczema count goes up by one everytime the press yes
         }
 		function mytestresults(){
-			var total_questionss = feet_count + eczema_count; //variable of the total count is created by adding both the amount of allergy and cold count
+			var total_questionss = feet_count + eczema_count; //variable of the total count is created by adding both the amount of athlete's feet (feet) and eczema
 
-			var Percent_Athlete_feet = (feet_count / total_questionss * 100); //the equation for counting the allergy percentage which is (allergy/total) times 100 and rounds it to the second decimal place
-            var Percent_eczema = (eczema_count / total_questionss * 100);  //the equation for counting the cold percentage which is (cold/total) times 100 and rounds it to the second decimal place
+			var Percent_Athlete_feet = (feet_count / total_questionss * 100); //the equation for counting the feet percentage which is (feet/total) times 100 and rounds it to the second decimal place
+            var Percent_eczema = (eczema_count / total_questionss * 100);  //the equation for counting the eczema percentage which is (eczema/total) times 100 and rounds it to the second decimal place
 
 			var resultText = document.getElementById("resultsinformation"); //creates a variable that can be used to change things inside later
-            resultText.innerHTML = "Athlete's feet probability= " + Percent_Athlete_feet + "%<br> Cold probability = " + Percent_eczema + "%";
+            resultText.innerHTML = "Athlete's feet probability= " + Percent_Athlete_feet + "%<br> Eczema probability = " + Percent_eczema + "%";
 		}
 
 </script>	
@@ -83,22 +83,23 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   .page:target {
     left: 0vw;
     z-index: 1;
+
 }
-	img, object{
-	max-height:90%;
-	max-width:90%;
+	img, object{  
+	max-height:90%; 
+	max-width:90%; 
 	height: auto; 
 	width: auto;
 	}
 	
 </style>
-
+<!-- the code above is to make the picture's resizable to screen size --> 
 <body>
 	
 	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
 	
-<div class="header w3-container w3-flat-carrot">
-	<h1>Athlete's feet or Eczema?</h1>
+<div class="header w3-container w3-flat-carrot"> <!-- the header that introduces the questionare -->
+	<h1>Athlete's feet or Eczema?</h1> 
 
 	
 </div>
@@ -111,8 +112,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-		<img src="feetimage.jpg" alt="feet that have eczema">
-	<img src="feetimage2.webp" alt="feet that has athelet's foot">
+		<img src="feetimage.jpg" alt="feet that have eczema"> <!-- this code details the addition of a picture -->
+	<img src="feetimage2.webp" alt="feet that has athelet's foot"> <!-- the code details the addition of another picture -->
 </div> <!-- adding this because it seems to be missing????? -->
 	
 <div class="page" id="one"> <!-- created a reusable class and id-->
@@ -122,8 +123,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div class="content w3-container">
         <p>Do you wear sweaty shoes for a long period of time or use public lockers?</p>   <!-- question number 1-->
-		<a href="#two"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a>  <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
-        <a href="#two"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a>  <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is no-->
+		<a href="#two"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a>  <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the feet if it is yes-->
+        <a href="#two"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a>  <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the eczema if it is no-->
 
     	</div>
 </div>
@@ -135,8 +136,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div class="content w3-container">
 		<p>Do you have a rash between your toes?</p> <!-- question number 2-->
-		<a href="#three"  onclick="eczemaAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
-        <a href="#three"  onclick="feetAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
+		<a href="#three"  onclick="eczemaAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the eczema if it is yes-->
+        <a href="#three"  onclick="feetAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the feet if it is no-->
 		
 		
 	</div>
@@ -148,8 +149,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div class="content w3-container">
 		<p>Do you have any allergies, or sensitive skin?</p> <!-- question number 3-->
-		<a href="#four"  onclick="eczemaAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
-        <a href="#four"  onclick="feetAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
+		<a href="#four"  onclick="eczemaAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the eczema if it is yes-->
+        <a href="#four"  onclick="feetAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the feet if it is no-->
 	</div>
 </div>	
 	<div class="page" id="four">  <!-- created a reusable class and id-->
@@ -159,8 +160,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div class="content w3-container">
 		<p>Do you have a burning feeling in addition to any itching?</p> <!-- question number 4-->
-		<a href="#five"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
-        <a href="#five"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
+		<a href="#five"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the feet if it is yes-->
+        <a href="#five"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the eczema if it is no-->
 	</div>
 </div>	
 	<div class="page" id="five">  <!-- created a reusable class and id-->
@@ -169,9 +170,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div class="content w3-container">
-		<p>Is the skin on your feet dry or moist between the toes?</p> <!-- question number 4-->
-		<a href="#six"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is yes-->
-        <a href="#six"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
+		<p>Is the skin on your feet dry or moist between the toes?</p> <!-- question number 5-->
+		<a href="#six"  onclick="feetAdd();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the feet if it is yes-->
+        <a href="#six"  onclick="eczemaAdd();" class="w3-btn w3-black">No</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the eczema if it is no-->
 	</div> 
 		</div>	
 	
@@ -181,9 +182,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div class="content w3-container">
-		<p>Do you have asthma?</p> <!-- question number 4-->
-		<a href="#results"  onclick="eczemaAdd(); mytestresults();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the cold if it is yes-->
-        <a href="#results"  onclick="feetAdd();mytestresults();"  class="w3-btn w3-black">No</a>  <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the allergies if it is no-->
+		<p>Do you have asthma?</p> <!-- question number 6-->
+		<a href="#results"  onclick="eczemaAdd(); mytestresults();" class="w3-btn w3-black"> Yes</a> <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the eczema if it is yes-->
+        <a href="#results"  onclick="feetAdd();mytestresults();"  class="w3-btn w3-black">No</a>  <!-- creates a link and href moves the click to the next id which in this case is two. Adds to the feet if it is no-->
 	</div>
 </div>	
 	<div class="page" id="results">  <!-- created a reusable class and id-->
